@@ -1,5 +1,5 @@
 <% @items.each do |resource| %>
   <li class="<%= rotate(:r2_r1) %>">
-    <%= linkify(resource, resource.name.to_s.gsub(/Controller/, "")) %>
+    <%= linkify(resource, type_as_string(resource)) %>
   </li>
 <% end %>
