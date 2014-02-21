@@ -12,5 +12,12 @@ module HtmlBlocksHelper
     @counter[name].even? ? elements[0] : elements[1]
   end
 
+  def type_as_string(type)
+    if type.resource? and type.tag(:restful_api).text
+      "#{type.name.to_s.gsub(/Controller/, '')} [#{type.tag(:restful_api).text}]"
+    else
+      type.name.to_s
+    end
+  end
 end
 
