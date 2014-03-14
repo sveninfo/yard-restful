@@ -10,7 +10,12 @@ body {
   right: 0;
   position: fixed;
   top: 0;
-  width: 230px;
+  width: 246px;
+  overflow-y: scroll;
+  margin-right: -16px;
+}
+#toc ol {
+  padding-bottom: 10px;
 }
 #header {
   position: fixed;
