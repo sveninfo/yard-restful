@@ -28,6 +28,9 @@
       <% else %>
         <%= yieldall(object: meth, item: :response_field, title: 'Response Fields') %>
       <% end %>
+      <% if meth.tags(:raise).size > 0 %>
+        <%= yieldall(object: meth, item: :raise, title: 'Errors') %>
+      <% end %>
 
 			<% if meth.tags(:example_request).size > 0 %>
 				<div class="examples">
