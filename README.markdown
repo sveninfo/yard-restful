@@ -29,10 +29,13 @@ You'll probably want to add these to your .gitignore as well
 So you'll have to re-genenarte your API on every machine. This should encourage more up to dateness
 
 ## Execution
-It is recommended that you use a .yardopts file
+It is recommended that you use a .yardopts file. The sample below
+assumes you are using Markdown in your YARD, as does the sample
+documentation.
 
 	--title "My API Documentation"
 	--plugin restful
+  --markup markdown
 	--readme API_README
 	--output-dir ./public/api
 	app/models/**/*.rb
