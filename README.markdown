@@ -35,7 +35,7 @@ documentation.
 
 	--title "My API Documentation"
 	--plugin restful
-  --markup markdown
+        --markup markdown
 	--readme API_README
 	--output-dir ./public/api
 	app/models/**/*.rb
