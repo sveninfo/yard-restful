@@ -10,6 +10,7 @@ begin
     gem.email = ''
     gem.homepage = "https://github.com/kraft001/yard-restful"
     gem.authors = ['Konstantin Rafalsky']
+    gem.licenses = ['MIT']
     gem.add_dependency("yard", '~>0.8.3')
     gem.files = Dir.glob("{lib,templates}/**/*").concat(["Rakefile"])
     gem.extra_rdoc_files = ['VERSION', 'README.markdown']
